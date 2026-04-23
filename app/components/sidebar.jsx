@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Sidebar({ activeTab }) {
     return (
-        <div className="bg-gray-700 w-[25%] h-full flex flex-col gap-1 pr-8 py-12">
+        <div className="bg-gray-700 w-[25%] h-full flex flex-col gap-1 pr-8 py-12 hidden sm:flex">
             <div className={`sidebar-link relative ${activeTab == "dashboard" ? 'active' : ''}`}>
                 <Link href="/">
                     <h1 className="font-amagro text-white text-3xl pl-8">Daggerbase</h1>

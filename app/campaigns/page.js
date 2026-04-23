@@ -8,13 +8,13 @@ export default async function Campaigns() {
     return (
         <div className="h-screen w-full flex">
             <Sidebar activeTab={"campaigns"} />
-            <div className="bg-black w-[75%] h-full">
+            <div className="bg-black w-full sm:w-[75%] h-full">
                 <div className="flex flex-col">
-                    <div className="p-16">
+                    <div className="p-8 sm:p-16">
                         <div className="flex justify-between items-center mb-8">
                             <h2 className="font-amagro text-xl">Campaigns</h2>
                         </div>
-                        <div className="flex gap-8">
+                        <div className="flex gap-8 flex-col sm:flex-row">
                             {campaigns.map(campaign => (
                                 <Card
                                     key={campaign.id}

@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="sm:overflow-hidden">
       <body className={`${geistSans.className} antialiased`}>
         <ThemeProvider
           attribute="class"
