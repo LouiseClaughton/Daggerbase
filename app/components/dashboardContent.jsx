@@ -1,4 +1,5 @@
-// app/DashboardContent.jsx
+export const dynamic = "force-dynamic";
+
 import { createClient } from '@/lib/supabase/server';
 import Card from './card';
 import Link from 'next/link';
